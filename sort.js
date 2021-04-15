@@ -35,3 +35,23 @@ var arr = [0,0,1,1,0,2,1,0,2,1,1,0,0];
 console.log(sort012(arr,arr.length));
 
 //second logic
+
+function sort01(arr){
+    var newArr =[];
+    var countZero =0 ;
+    var countOne ;
+    for(var i =0; i<arr.length; i++){
+        if(arr[i]==0){
+            newArr.push('0')
+            countZero++;
+        }
+    }
+    countOne = arr.length - countZero;
+    for(let k =0;k<countOne;k++){
+        newArr.push(1);
+    }
+    return newArr
+}
+console.log(sort01([0,1,1,1,0,0,0,1,0,1,1]));
+
+//output [0,0,0,0,0,1,1,1,1,1,1]
