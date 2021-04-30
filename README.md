@@ -2,7 +2,7 @@
 
 ## check anagram array
 
-# function checkAnagram(arr){
+ function checkAnagram(arr){
   var str = arr[0];
   var c =1
   for(let i = 1 ; i < arr.length ; i++){
