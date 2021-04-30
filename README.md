@@ -2,15 +2,15 @@
 
 ## check anagram array
 
- function checkAnagram(arr){
+# function checkAnagram(arr){
   var str = arr[0];
   var c =1
-for(let i = 1 ; i < arr.length ; i++){
-var sortString = arr[i].split('').sort().join('');
-  if(sortString == str){
- c++;
-}
-}
+  for(let i = 1 ; i < arr.length ; i++){
+   var sortString = arr[i].split('').sort().join('');
+     if(sortString == str){
+      c++;
+     }
+  }
   if(c== arr.length){
     return true;
   }
